@@ -90,14 +90,13 @@
 #         return print("JAIME LES DINOSAURES")
 
 
-# initialisation de x
-x=0
+
 #création du jeux
 def jeu1(x):
     #demande joueur la lettre demandé
     reponse = input("rentrez une lettre: ")
     #Assigner char a la valeur de imput 
-    char ='h'
+    char ='m'
     #si char n'est pas égale a la réponse demander alors :
     if (char != reponse):
         # rajouté + 1 à x
@@ -115,21 +114,30 @@ def jeu1(x):
         # return et envoyé un print avec un message + le nombre de tour qu'il a fait !
         return print("jaime les dinosaures","nombre de tour fait :",b)
 
-tableau = [0,54,8,22,5,7,6,1,9,87,2]
+jeu1(0)
 
-# on veux récupe 8
+# tableau = [0,54,8,22,5,7,6,1,9,87,2]
 
-print(tableau[2]) #affiche 2
+# # on veux récupe 8
 
-len(tableau) #renvoie la taille de tableau
+# print(tableau[2]) #affiche 2
 
-prenom = "Alexandre"
-nom = "Camandona"
-identite = nom + prenom #problème pas d'espace
-identite = nom + '' + prenom
-*
-integerValuer = 554 #renvoie 554
-stringIntergerValue = str(554) #renvoie "554"
+# len(tableau) #renvoie la taille de tableau
+
+# prenom = "Alexandre"
+# nom = "Camandona"
+# identite = nom + prenom #problème pas d'espace
+# identite = nom + '' + prenom
+# *
+# integerValuer = 554 #renvoie 554
+# stringIntergerValue = str(554) #renvoie "554"
+
+# # ex1 : faire fonction qui concatene 2 chaine de carractère, les séparant par une virgule
+
+# # ex2 : faire une fonction qui itere sur tous les index d'un tableau renvoyen une chaine de carractère
+# # avec l'enssemble des occuration d'un chiffre e.g.:
+# #pour tableau = [0,1,1,1,0,1,1,0,1]
+# #la fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hesitez pas a implemter la premiere fonction ;)
 
 
 
