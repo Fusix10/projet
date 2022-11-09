@@ -92,6 +92,9 @@
 
 
 #création du jeux
+import random
+
+
 def jeu1(x):
     #demande joueur la lettre demandé
     reponse = input("rentrez une lettre: ")
@@ -141,6 +144,56 @@ jeu1(0)
 
 
 
+#def la fonction concatWithComma qui prend comme paramètre strA strB
+def concatWithcomma(strA,strB):
+    #Assigner a stringifiedStrA le retour de la fonction str with comme parametre strA
+    stringifiedStrA = str(strA)
+    #Assigner a stringifiedStrB le retour de la fonction str with comme parametre strB
+    stringifiedStrB = str(strB)
+    #Assigner a chaineResultat la concatenantion de stringifiedStrA, de la chaine ", " et de stringifiedStrB
+    chaineResultat = stringifiedStrA + "," + stringifiedStrB
+    #Retourner ChaineResultat
+    return chaineResultat
 
 
 
+#initialisé le tableau = [0, 1, 1, 1, 0, 1, 1, 0, 1]
+tableau = [0, 1, 1, 1, 0, 1, 1, 0, 1]
+#définir findIndexes avec comme paramettre (tableau, x)
+def findIndexes(tableau, x):
+    #initialisé i égale 0
+    i = 0
+    #assigne a chaineRetour --> chaine de caractère vide 
+    chaineRetour = ""
+    #tant que i inférieur a la fonction len sois,le nombre d'élément dans le tableau,
+    while i < len(tableau):
+        #alors assigner a selected le tableau pour index i
+        selected = tableau[i]
+        isFisrt = True
+            #si selected est égale a x 
+            if selected == x:
+                #alors si isFisrt est vrai
+                if isFisrt == True:
+                    #alors on assigne a chaineRetour la valeur de i
+                    chaineRetour = i()
+                #sinon
+                else:
+                    #chaineRetour est égale au retour de l'éxécution de la fonction concatwithComma avec paramètre chaineRetour et i
+                    chaineRetour = concatWithcomma(chaineRetour,i)
+            #assigner i égale a i + 1 ps c'est incrémenté
+            i = i + 1
+        #return chaineRetour 
+        return chaineRetour
+
+# puronatchi
+# x valeur Premier
+# nombre de fois  
+ 
+
+
+      
+# 2 fonction : -random donne un nombre aléatoire 
+#              -input les entrés joueuer 
+
+# cowway (x)
+# L=[[xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen]]xlen
