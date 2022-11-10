@@ -91,6 +91,7 @@
 
 
 
+
 #création du jeux
 import random
 
@@ -197,3 +198,9 @@ def findIndexes(tableau, x):
 
 # cowway (x)
 # L=[[xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen][xlen]]xlen
+
+def fibonacci(startValue, xMax):
+    result = [0, startValue]
+    calculedValue
+    previousValue = result[n - 1]
+    prePreviousValue = 
